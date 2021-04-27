@@ -1,0 +1,83 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+li { 
+    float: left;
+
+}
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+li a:hover{
+    background-color: red;
+
+}
+li a:active {
+    background-color:grey;
+
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.box {
+    float: left;
+    width: 33%;
+    padding: 50px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+img {
+    float: left;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home" class="active">Home</a>
+  </li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#help">Help</a></li>
+</li>
+  </ul>
+
+<h1>Two Elements that appear side by side</h1>
+<p>Floating boxes with different sides;</p>
+<div class="clearfix">
+<div class="box" style="background-color: orange">
+<h3>This is box 1</h3>
+<p>This is an orange box next to a blue box</p>
+</div>
+<div class="box" style="background-color: aquamarine;">
+<h3>This is box 2</h3>
+<p>This is a blue box next to an orange box</p>
+</div>
+</div>
+<img src="./images/Covid-19.jpg" alt="Covid-19" style= width:500px;" height:"2000px;" margin-right:15px;>
+<p><b>Covid-19 is a deadly virus , this is an image of width:500px and height:2000px.
+</b></p>
+
+</body>
+  </html>
